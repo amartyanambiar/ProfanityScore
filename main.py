@@ -5,7 +5,7 @@ with open('tweets.txt', 'r') as f:
     tweets = f.readlines()
 
 racial_slurs_df = pd.read_csv("racial_slurs.csv")
-racial_slurs = set(racial_slurs_df["word"].lower())
+racial_slurs = set(racial_slurs_df["slur"].lower())
 
 
 def is_racial_slur(word):
